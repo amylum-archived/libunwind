@@ -1,0 +1,31 @@
+diff --git a/tests/test-coredump-unwind.c b/tests/test-coredump-unwind.c
+index 5254708..da0137a 100644
+--- a/tests/test-coredump-unwind.c
++++ b/tests/test-coredump-unwind.c
+@@ -57,7 +57,9 @@
+ #include <grp.h>
+ 
+ /* For SIGSEGV handler code */
+-#include <execinfo.h>
++#ifdef __GLIBC__
++  #include <execinfo.h>
++#endif
+ #include <sys/ucontext.h>
+ 
+ #include <libunwind-coredump.h>
+@@ -238,6 +240,7 @@ void handle_sigsegv(int sig, siginfo_t *info, void *ucontext)
+ 			ip);
+ 
+   {
++#ifdef __GLIBC__
+     /* glibc extension */
+     void *array[50];
+     int size;
+@@ -245,6 +248,7 @@ void handle_sigsegv(int sig, siginfo_t *info, void *ucontext)
+ #ifdef __linux__
+     backtrace_symbols_fd(array, size, 2);
+ #endif
++#endif
+   }
+ 
+   _exit(1);
