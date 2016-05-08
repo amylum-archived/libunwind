@@ -8,7 +8,7 @@ RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 PATH_FLAGS = --prefix=/usr
 CONF_FLAGS =
-CFLAGS = -I$(DEP_DIR)/usr/include
+CFLAGS = -static -I$(DEP_DIR)/usr/include
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/v//')
 PATCH_VERSION = $$(cat version)
