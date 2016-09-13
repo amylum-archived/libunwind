@@ -1,6 +1,8 @@
 libunwind
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/libunwind.svg)](https://circleci.com/gh/amylum/libunwind)
+[![GitHub release](https://img.shields.io/github/release/amylum/libunwind.svg)](https://github.com/amylum/libunwind/releases)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Package repo for [libunwind](http://www.nongnu.org/libunwind/)

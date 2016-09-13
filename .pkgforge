@@ -1,0 +1,26 @@
+name 'libunwind'
+org 'amylum'
+
+deps(
+  'linux-api-headers': '4.8-rc4-1'
+)
+
+configure_flags(
+  prefix: '/usr'
+)
+
+cflags
+harden
+
+patch 'musl-execinfo-fix.patch'
+
+build do
+  run 'autoreconf -i'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end
