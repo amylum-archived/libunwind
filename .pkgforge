@@ -2,7 +2,7 @@ name 'libunwind'
 org 'amylum'
 
 deps(
-  'linux-api-headers': '4.9-rc2-3'
+  'linux-api-headers': '4.9-rc3-2'
 )
 
 configure_flags(
