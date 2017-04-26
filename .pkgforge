@@ -13,6 +13,7 @@ cflags
 harden
 
 patch 'musl-execinfo-fix.patch'
+patch 'gcc_s.patch'
 
 build do
   run 'autoreconf -i'
