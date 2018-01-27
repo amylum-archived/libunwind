@@ -7,9 +7,9 @@ my_slug = pkgforge.org + '/' + pkgforge.name
 item do
   expected do
     url_xpath
-    url 'http://www.nongnu.org/libunwind/download.html'
-    xpath '//*[@id="col2"]'
-    regex /.*libunwind-([\d.]+)\.tar\.gz.*/m
+    url 'http://git.savannah.nongnu.org/cgit/libunwind.git/refs/tags'
+    xpath '//*[@id="cgit"]/div/table/tr[2]/td[1]/a'
+    regex '^v([\d.\w-]+)$'
   end
 
   actual do
