@@ -9,7 +9,7 @@ item do
     url_xpath
     url 'http://git.savannah.nongnu.org/cgit/libunwind.git/refs/tags'
     xpath '//*[@id="cgit"]/div/table/tr[2]/td[1]/a'
-    regex '^v([\d.\w-]+)$'
+    regex /^v([\d.\w-]+)$/
   end
 
   actual do
