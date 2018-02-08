@@ -1,11 +1,11 @@
 diff --git a/configure.ac b/configure.ac
-index 863fb8f..79b9cb4 100644
+index 0c512597..3f5e9f9f 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -315,7 +315,7 @@ else
+@@ -344,7 +344,7 @@ else
  fi
  
- if test x$GCC = xyes -a x$intel_compiler != xyes -a x$qcc_compiler != xyes; then
+ if test x$GCC = xyes -a x$intel_compiler != xyes -a x$qcc_compiler != xyes -a x$android != xyes; then
 -  LIBCRTS="-lgcc_s"
 +  LIBCRTS="-lgcc"
  fi
