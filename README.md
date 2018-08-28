@@ -1,7 +1,7 @@
 libunwind
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/libunwind/master.svg)](https://circleci.com/gh/amylum/libunwind)
+[![Build Status](https://img.shields.io/travis/com/amylum/libunwind.svg)](https://travis-ci.com/amylum/libunwind)
 [![GitHub release](https://img.shields.io/github/release/amylum/libunwind.svg)](https://github.com/amylum/libunwind/releases)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
